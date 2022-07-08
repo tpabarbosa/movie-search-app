@@ -1,5 +1,5 @@
 export const navigateTo = (path: string) => {
-    window.location.href = path
+    window.location.href = 'https://tpabarbosa.github.io/' + path
 }
 
 export const currentURL = () => {

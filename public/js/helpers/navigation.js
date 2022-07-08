@@ -1,5 +1,5 @@
 export var navigateTo = function (path) {
-    window.location.href = path;
+    window.location.href = 'https://tpabarbosa.github.io/' + path;
 };
 export var currentURL = function () {
     return window.location.href;
