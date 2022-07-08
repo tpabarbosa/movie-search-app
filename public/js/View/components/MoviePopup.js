@@ -34,6 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+import config from "../../config.js";
 import { currentURL, navigateTo } from "../../helpers/navigation.js";
 import ListService from "../../services/ListService.js";
 import MovieService from "../../services/MovieService.js";
@@ -59,7 +60,7 @@ var MoviePopup = /** @class */ (function () {
         this.loadButtons = function () {
             var html = '';
             if (!_this.session_id) {
-                html = "\n                <div class=\"movie-popup-btn\">Voc\u00EA n\u00E3o est\u00E1 logado</div>\n                <div class=\"movie-popup-btn in-text-link\">\n                    <i class=\"fa-solid fa-right-to-bracket\"></i>\n                    <a class=\"in-text-link\" href=\"/?show=login&redirect=".concat(currentURL(), "\">Fazer Login</a>\n                </div>\n            ");
+                html = "\n                <div class=\"movie-popup-btn\">Voc\u00EA n\u00E3o est\u00E1 logado</div>\n                <div class=\"movie-popup-btn in-text-link\">\n                    <i class=\"fa-solid fa-right-to-bracket\"></i>\n                    <a class=\"in-text-link\" href=\"".concat(config.BASE_URL, "/?show=login&redirect=").concat(currentURL(), "\">Fazer Login</a>\n                </div>\n            ");
             }
             else {
                 html = "\n                <div id=\"add-to-list\" class=\"movie-popup-btn hidden\">\n                ".concat(_this.addToListBox.load(), "</div>\n                <div id=\"remove-from-list\" class=\"movie-popup-btn hidden\"></div>\n                <div id=\"add-to-favorites\" class=\"movie-popup-btn\">").concat(_this.markAsFavoriteBox.load(), "</div>\n                <div id=\"add-to-watchlist\" class=\"movie-popup-btn\">").concat(_this.addToWatchlistBox.load(), "</div>\n                <div id=\"add-rating\" class=\"movie-popup-btn\">\n                    ").concat(_this.ratingBox.load(), "\n                </div>\n                \n            ");

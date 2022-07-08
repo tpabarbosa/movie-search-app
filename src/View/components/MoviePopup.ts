@@ -1,3 +1,4 @@
+import config from "../../config.js";
 import { currentURL, navigateTo } from "../../helpers/navigation.js";
 import { AppProps, IComponent, IModal, IMovieAccountStateComponent, IMovieAccountStates } from "../../interfaces.js"
 import ListService from "../../services/ListService.js";
@@ -57,7 +58,7 @@ export default class MoviePopup implements IComponent {
                 <div class="movie-popup-btn">Você não está logado</div>
                 <div class="movie-popup-btn in-text-link">
                     <i class="fa-solid fa-right-to-bracket"></i>
-                    <a class="in-text-link" href="/?show=login&redirect=${currentURL()}">Fazer Login</a>
+                    <a class="in-text-link" href="${config.BASE_URL}/?show=login&redirect=${currentURL()}">Fazer Login</a>
                 </div>
             `
         } else {

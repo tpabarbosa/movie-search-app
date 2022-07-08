@@ -1,5 +1,7 @@
+import config from "../config.js"
+
 export const navigateTo = (path: string) => {
-    window.location.href = 'https://tpabarbosa.github.io/' + path
+    window.location.href = config.BASE_URL + path
 }
 
 export const currentURL = () => {

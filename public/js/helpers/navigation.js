@@ -1,5 +1,6 @@
+import config from "../config.js";
 export var navigateTo = function (path) {
-    window.location.href = 'https://tpabarbosa.github.io/' + path;
+    window.location.href = config.BASE_URL + path;
 };
 export var currentURL = function () {
     return window.location.href;

@@ -46,7 +46,7 @@ export default class MoviesWithOverview implements IComponent {
     private Movie = (movie: IMovie) => {
         const html = `
             <li class="movies-with-overview-item">
-                <a href="/?show=movie&id=${movie.id}">
+                <a href="${config.BASE_URL}/?show=movie&id=${movie.id}">
                     <img src="${imageUrl}${movie.poster_path}" alt="${movie.title}" />
                     <div class="">
                         <h3>${movie.title}</h3>

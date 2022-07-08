@@ -24,7 +24,7 @@ var MoviesHorizontal = /** @class */ (function () {
         this.onLoad = function () {
         };
         this.Movie = function (movie) {
-            var html = "\n            <li class=\"movies-horizontal-item\">\n                <a href=\"/?show=movie&id=".concat(movie.id, "\">\n                    <img src=\"").concat(imageUrl).concat(movie.poster_path, "\" alt=\"").concat(movie.title, "\" />\n                    <h3>").concat(movie.title, "</h3>\n                    <p>").concat(dateToLocal(movie.release_date, yMMd), "</p>\n                </a>\n                <span class='movie-options' data-id=\"").concat(movie.id, "\" data-list-id=\"").concat(_this.listId, "\">...</span>\n                <span class='movie-rating'>").concat(movie.vote_average.toFixed(1), "</span>\n            </li>\n        ");
+            var html = "\n            <li class=\"movies-horizontal-item\">\n                <a href=\"".concat(config.BASE_URL, "/?show=movie&id=").concat(movie.id, "\">\n                    <img src=\"").concat(imageUrl).concat(movie.poster_path, "\" alt=\"").concat(movie.title, "\" />\n                    <h3>").concat(movie.title, "</h3>\n                    <p>").concat(dateToLocal(movie.release_date, yMMd), "</p>\n                </a>\n                <span class='movie-options' data-id=\"").concat(movie.id, "\" data-list-id=\"").concat(_this.listId, "\">...</span>\n                <span class='movie-rating'>").concat(movie.vote_average.toFixed(1), "</span>\n            </li>\n        ");
             return html;
         };
         this.movies = movies !== null && movies !== void 0 ? movies : [];

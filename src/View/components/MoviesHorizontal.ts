@@ -49,7 +49,7 @@ export default class MoviesHorizontal implements IComponent {
     private Movie = (movie: IMovie) => {
         const html = `
             <li class="movies-horizontal-item">
-                <a href="/?show=movie&id=${movie.id}">
+                <a href="${config.BASE_URL}/?show=movie&id=${movie.id}">
                     <img src="${imageUrl}${movie.poster_path}" alt="${movie.title}" />
                     <h3>${movie.title}</h3>
                     <p>${dateToLocal(movie.release_date, yMMd)}</p>

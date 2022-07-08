@@ -1,4 +1,5 @@
 var config = {
+    BASE_URL: 'https://tpabarbosa.github.io/movie-search-app',
     TMDB: {
         API_URL: "https://api.themoviedb.org/3",
         API_KEY_V3: 'dfa2dacbf5d77f55b28677b5f0636617',
