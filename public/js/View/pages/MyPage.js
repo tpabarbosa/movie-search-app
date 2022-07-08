@@ -232,7 +232,7 @@ var MyPage = /** @class */ (function (_super) {
             var _a;
             _this.content = document.getElementById('my-page-content');
             _this.navButtons = document.getElementsByClassName('user-navigation');
-            var tab = (_a = _this.params.get('tab')) !== null && _a !== void 0 ? _a : 'user-lists';
+            var tab = (_a = _this.params.get('tab')) !== null && _a !== void 0 ? _a : 'lists';
             _this.updateContent(tab);
             for (var i = 0; i < _this.navButtons.length; i++) {
                 _this.navButtons[i].addEventListener('click', _this.handleNavButtonClick);

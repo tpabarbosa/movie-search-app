@@ -201,7 +201,7 @@ export default class MyPage extends AbstractPage{
         this.navButtons = document.getElementsByClassName('user-navigation')
         
 
-        const tab = this.params.get('tab') ?? 'user-lists'
+        const tab = this.params.get('tab') ?? 'lists'
         this.updateContent(tab)
 
         for (let i = 0; i < this.navButtons.length; i++) {
