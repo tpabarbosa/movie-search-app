@@ -1,7 +1,7 @@
 import config from "../config.js"
 
-export const navigateTo = (path: string) => {
-    window.location.href = config.BASE_URL + path
+export const navigateTo = (path: string, skipBaseURL: boolean = false) => {
+    window.location.href = skipBaseURL ? path : config.BASE_URL + path
 }
 
 export const currentURL = () => {

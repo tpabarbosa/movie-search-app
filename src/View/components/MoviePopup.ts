@@ -100,7 +100,7 @@ export default class MoviePopup implements IComponent {
             this.removeFromList.addEventListener('click', async () => {
                 const resp = await ListService.removeMovie(this.movieId, this.session_id, this.listId)
                 if (resp && resp.success) {
-                    navigateTo(currentURL())
+                    navigateTo(currentURL(), true)
                 }
             });
 

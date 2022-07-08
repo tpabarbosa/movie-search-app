@@ -1,6 +1,7 @@
 import config from "../config.js";
-export var navigateTo = function (path) {
-    window.location.href = config.BASE_URL + path;
+export var navigateTo = function (path, skipBaseURL) {
+    if (skipBaseURL === void 0) { skipBaseURL = false; }
+    window.location.href = skipBaseURL ? path : config.BASE_URL + path;
 };
 export var currentURL = function () {
     return window.location.href;

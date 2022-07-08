@@ -95,7 +95,7 @@ var MoviePopup = /** @class */ (function () {
                                 case 1:
                                     resp = _a.sent();
                                     if (resp && resp.success) {
-                                        navigateTo(currentURL());
+                                        navigateTo(currentURL(), true);
                                     }
                                     return [2 /*return*/];
                             }

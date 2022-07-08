@@ -173,7 +173,7 @@ export default class MyPage extends AbstractPage{
             if (this.session_id && listId) {
                 const resp = await ListService.removeList(this.session_id, listId)
                 this.removeListModal.close()
-                navigateTo(currentURL())
+                navigateTo(currentURL(), true)
             }
             
         })
@@ -186,7 +186,7 @@ export default class MyPage extends AbstractPage{
             if (this.session_id && this.createListName && this.createListDescription) {
                 const resp = await ListService.createList(this.session_id, list)
                 this.createListModal.close()
-                navigateTo(currentURL())
+                navigateTo(currentURL(), true)
             }
         })
 

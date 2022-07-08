@@ -198,7 +198,7 @@ var MyPage = /** @class */ (function (_super) {
                         case 1:
                             resp = _a.sent();
                             this.removeListModal.close();
-                            navigateTo(currentURL());
+                            navigateTo(currentURL(), true);
                             _a.label = 2;
                         case 2: return [2 /*return*/];
                     }
@@ -218,7 +218,7 @@ var MyPage = /** @class */ (function (_super) {
                         case 1:
                             resp = _a.sent();
                             this.createListModal.close();
-                            navigateTo(currentURL());
+                            navigateTo(currentURL(), true);
                             _a.label = 2;
                         case 2: return [2 /*return*/];
                     }
