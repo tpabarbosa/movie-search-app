@@ -17,3 +17,25 @@ Apesar de ser um aplicativo simples, posso dizer que foi desafiador fazê-lo sem
 > #### 👀
 > ##### [Veja o resultado clicando aqui!](https://tpabarbosa.github.io/movie-search-app/)
 > #### 👆
+
+
+![frontpage](/docs/images/frontpage.png?raw=true)
+
+![searchpage](/docs/images/searchpage.png?raw=true)
+
+
+![loginpage](/docs/images/loginpage.png?raw=true)
+
+![userpage](/docs/images/userpage_liststab.png?raw=true)
+
+![createlist](/docs/images/createlist.png?raw=true)
+
+![moviepage](/docs/images/moviepage.png?raw=true)
+
+![moviepage](/docs/images/moviepage_cont.png?raw=true)
+
+![moviepage](/docs/images/moviepage_cont2.png?raw=true)
+
+![popupnotlogged](/docs/images/popup_no_logged.png?raw=true)
+
+![popuplogged](/docs/images/popup_logged.png?raw=true)
